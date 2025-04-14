@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+#h1 {  align-self: flex-start;
+    background-color: #1e1b2f;
+    border-left: 4px solid #c084fc;
+    color: #e9d5ff;
+    box-shadow: 0 0 12px #a855f777;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    box-shadow: 0 0 15px #9333ea80;
+}
+#timer {
+  font-size: 150px;
+  margin-top: 40px;
+  background: linear-gradient(145deg, #1a1a2e, #0f0c29);
+  border: 2px solid #a855f7;
+  padding: 10px;
+  flex-direction: column;
+
+}
+audio { display: none; }
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 30px;
+    background-color: #0f0c29;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #9333ea40;
+  }
+  
+  
+  .caixa-estudo label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e9d5ff;
+    align-self: flex-start;
+  }
+  
+  .caixa-estudo select {
+    width: 100%;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 10px;
+  }
+    
+
+#modo{
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1c1a2e;
+  color: #fff;
+  box-shadow: 0 0 10px #c084fc55 inset;
+  outline: none;
+  font-family: 'Orbitron', sans-serif;
+}
+#som{
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1c1a2e;
+    color: #fff;
+    box-shadow: 0 0 10px #c084fc55 inset;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #9333ea, #8b5cf6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 15px #a855f7aa;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #6366f1, #8b5cf6, #9333ea);
+  box-shadow: 0 0 25px #c084fc, 0 0 35px #a855f7;
+}
+

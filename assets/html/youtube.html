@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criar Playlist</title>
+  <link rel="stylesheet" href="/assets/css/youtube.css">
+</head>
+<body>
+     <!-- Botão Toggle -->
+     <button id="toggleSidebar" class="btn toggle-btn">
+      ☰
+    </button>
+  
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <img src="/assets/img/logo.png.png" alt="Logo RamStudy" class="logo" />
+      <ul class="nav">
+        <li><a href="/home.html">Início</a></li>
+        <!-- <li><a href="/assets/páginas/flash.html">Flashcards</a></li> -->
+        <li><a href="/assets/páginas/index.html">temporizador</a></li>
+        <li><a href="/assets/páginas/todolist.html">lista organizadora</a></li>
+        <li><a href="/assets/html/youtube.html">playlist</a></li>
+        <li><a href="/assets/páginas/salvos.html">Sobre nós</a></li>
+      </ul>
+      <link rel="stylesheet" href="/assets/css/home.css">
+      <script src="/assets/js/home.js"></script>
+    </div>
+  <header>
+    <button onclick="window.location.reload()">🔎 Buscar vídeos</button>
+    <button onclick="mostrarVideosSalvos()">⭐ Salvos</button>
+  </header>
+
+  <main>
+    <h1>Busque um tema para estudar</h1>
+    <input type="text" id="searchInput" placeholder="Ex: Revolução Francesa" />
+    <button onclick="buscarVideos()">Buscar</button>
+
+    <h2>📌 Vídeos Salvos</h2>
+    <div id="videosContainer" class="video-grid"></div>
+  </main>
+
+  <script src="/assets/js/youtube.js"></script>
+  <style>
+    .tremor img{
+      animation: shake 0.5s infinite;
+      width: 100px;
+      height: 90px;
+      display: flex;
+      float: 100% left;
+      position: absolute;
+      /* chat para fixar na tela */
+      top: 500px;      /* distância do topo */
+      right: 20px;    /* distância da direita */
+      z-index: 9999;  /* bem alto pra ficar por cima de tudo */
+      position: fixed;
+      border-radius: 200px;
+    
+     }
+          </style>
+           <div class="tremor" style="display: flex; float: right; text-align: right; margin: 10px;">
+        <a href="/assets/páginas/chat.html"><img src="/assets/img/chatboy.png" alt=""></div></a> 
+    
+</body>
+</html>
